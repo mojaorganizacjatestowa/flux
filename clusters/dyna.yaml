@@ -6,7 +6,7 @@ metadata:
 spec:
   interval: 1m
   secretRef:
-    name: github-token
+    name: my-git-auth
   ref:
     branch: main
   url: https://github.com/mojaorganizacjatestowa/flux_dynka
