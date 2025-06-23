@@ -27,7 +27,7 @@ spec:
   interval: 1m0s
   path: ./kustomize/3
   prune: true
-  force: true
+  force: false
   retryInterval: 2m0s
   sourceRef:
     kind: GitRepository
