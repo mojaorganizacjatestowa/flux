@@ -5,6 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
+  force: true
   ref:
     branch: main
   url: https://github.com/mojaorganizacjatestowa/flux_dyna
