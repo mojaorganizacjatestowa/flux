@@ -25,7 +25,7 @@ spec:
   dependsOn:
     - name: dyna
   interval: 1m0s
-  path: ./kustomize/1
+  path: ./kustomize/3
   prune: true
   force: true
   retryInterval: 2m0s
