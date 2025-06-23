@@ -5,6 +5,8 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
+  secretRef:
+    name: github-token
   ref:
     branch: main
   url: https://github.com/mojaorganizacjatestowa/flux_dynka
