@@ -6,6 +6,8 @@ metadata:
 spec:
   interval: 1m
   force: true
+  prune: true
+  wait: true
   ref:
     branch: main
   url: https://github.com/mojaorganizacjatestowa/flux_dyna
