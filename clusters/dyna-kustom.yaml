@@ -15,7 +15,7 @@ spec:
   targetNamespace: dynatrace-monitor
   timeout: 5m0s
   wait: true
-  ---
+---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
@@ -35,4 +35,3 @@ spec:
   targetNamespace: dynatrace-monitor
   timeout: 5m0s
   wait: true
-  ---
