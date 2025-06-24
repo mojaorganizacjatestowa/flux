@@ -46,7 +46,7 @@ spec:
     - name: dyna2
   interval: 1m0s
   path: ./kustomize/3
-  prune: true
+  prune: false
   force: false
   retryInterval: 2m0s
   sourceRef:
