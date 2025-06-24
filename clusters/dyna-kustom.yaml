@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./kustomize
+  path: ./kustomize/4
   prune: true
   force: true
   retryInterval: 2m0s
@@ -24,6 +24,26 @@ metadata:
 spec:
   dependsOn:
     - name: dyna
+  interval: 1m0s
+  path: ./kustomize
+  prune: true
+  force: true
+  retryInterval: 2m0s
+  sourceRef:
+    kind: GitRepository
+    name: dyna
+  targetNamespace: dynatrace-monitor
+  timeout: 5m0s
+  wait: true
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: dyna3
+  namespace: flux-system
+spec:
+  dependsOn:
+    - name: dyna2
   interval: 1m0s
   path: ./kustomize/3
   prune: true
